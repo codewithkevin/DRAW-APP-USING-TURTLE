@@ -31,16 +31,11 @@ class Tim(Turtle):
                 if self.choice == shape:
                     if shape == 'triangle':
                         game(TRIANGLE)
-                        break
+                        
                     elif shape == 'square':
                         game(SQUARE)
-                        break   
+                         
                     elif shape == 'circle':
                         game(CIRCLE)
-                        break
-                    else:
-                        self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
-
-            
-            
-            
+                    
+                
