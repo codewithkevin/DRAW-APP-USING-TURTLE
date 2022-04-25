@@ -12,10 +12,9 @@ class Tim(Turtle):
 
     def __init__(self, display):
         super().__init__()
-        self.penup()
         self.display = display
         self.should_continue = True
-        self.shape("circle")
+        self.shape("turtle")
         self.color("red")
         self.goto(-40, 0)
         self.choice = self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
@@ -28,25 +27,17 @@ class Tim(Turtle):
                     self.forward(100)
                     self.left(angle)
 
-            if self.choice.lower() == "square":
-                self.pendown()
-                game(SQUARE)
-                break
-                
+            for shape in DRAW_LIST:
+                if self.choice == shape:
+                    if shape == 'triangle':
+                        game(TRIANGLE)
+                    elif shape == 'square':
+                        game(SQUARE)
+                    elif shape == 'circle':
+                        game(CIRCLE)
+                    else:
+                        self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
 
-            elif self.choice.lower() == "triangle":
-                self.pendown()
-                game(TRIANGLE)
-                break
-                
-
-            elif self.choice.lower() == "circle":
-                self.pendown()
-                game(CIRCLE)
-                break
-
-            elif self.choice.lower() not in DRAW_LIST:
-                self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
-                self.check()
+            
             
             
