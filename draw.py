@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-SQUARE= 4
+SQUARE = 4
 TRIANGLE = 3
 CIRCLE = 2
 
@@ -45,7 +45,8 @@ class Tim(Turtle):
                 game(CIRCLE)
                 break
 
-            elif 
-
+            elif self.choice.lower() not in DRAW_LIST:
+                self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
+                self.check()
             
             
