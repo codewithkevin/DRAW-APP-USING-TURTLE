@@ -44,4 +44,8 @@ class Tim(Turtle):
                 self.pendown()
                 game(CIRCLE)
                 break
+
+            elif 
+
+            
             

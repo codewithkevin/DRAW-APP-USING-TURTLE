@@ -1,0 +1,1 @@
+LIST = ['sqaure', 'circle', 'triangle']
