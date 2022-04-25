@@ -15,7 +15,7 @@ class Tim(Turtle):
         self.display = display
         self.should_continue = True
         self.shape("turtle")
-        self.color("red")
+        self.color("white")
         self.goto(-40, 0)
         self.choice = self.display.textinput(title="WHAT DOYOU WANT TO DRAW", prompt='Enter your response;\n')
 
