@@ -1,1 +1,1 @@
-LIST = ['sqaure', 'circle', 'triangle']
+SHAPES = ['sqaure', 'circle', 'triangle']
