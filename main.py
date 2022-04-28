@@ -1,3 +1,15 @@
-name = input("What is your name? ").upper()
-age = int(input("How old are you? "))
+from turtle import *
+from draw import *
 
+
+screen = Screen()
+screen.bgcolor("black")
+screen.title("Turtle")
+
+
+
+
+
+
+
+screen.existonclick()
